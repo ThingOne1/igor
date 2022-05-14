@@ -7,24 +7,26 @@
     <title>NACIONALIDADE</title>
 </head>
 <body>
-    <h1>Sua Nacionalidade</h1>
-    Sua nacionalidade é: <input type="search" name="txtncd" id="txtncd">
-    <input type="button" value="verificar" onclick="calcular()">
-    <div id="res">
+    <label for="NACI">Sua nacionalidade é:</label>
+    <input id="Nacionalidade" class="form-control" type="text" name="NACI" placeholder="Insira aqui">
+
+    
 
     </div>
     <script>
         function calcular() {
-            var txtncd = window.document.querySelector('input#txtncd')
-            var res = window.document.querySelector('div#res')
-            var pais = window.document.getElementById('pais')
-                console.log(`vivendo no ${pais}`)
-            if (pais == 'Brasil') {
-                console.log('Brasileiro') 
-            } else { // condição composta
-                console.log('Estrangeiro')
+            const x = document.getElementById('Nacionalidade');
+            var origem = x.value;
+            var pais = "Brasil";
+            if (origem == pais) {
+                var resposta = "Voce é Brasileiro";
+                document.getElementById('RES').innerHTML = resposta;
+            } else {
+                var resposta = "Voce é Estrangeiro";
+                document.getElementById('RES').innerHTML = resposta;
             }
         }
     </script>
+    <h6 id="RES">  </h6>
 </body>
 </html>
