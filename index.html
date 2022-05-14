@@ -7,13 +7,18 @@
     <link rel="stylesheet" href="bootstrap.css">
     <title>NACIONALIDADE</title>
 </head>
-<body>
-    <div class="container-fluid">
-    <label class"pr-3" for="NACI">Escreva seu país: </label>
-    <input id="Nacionalidade" type="text" name="NACI" placeholder="Insira aqui">
-    <button  type="submit" class="btn btn-primary mb-2 form-control" onclick="calcular()">Enviar</button>
-    </div>
-
+<body class="bg-dark">
+  <header>
+    <nav class=" text-center bg-dark">
+  <a class="navbar-brand text-center Title1" href="index.html">
+    Igo Website
+  </a>
+</nav>
+  </header>
+    <div class="container-fluid text-center pt-5 mt-5 bg-dark">
+    <label class"pr-3" for="NACI"><h3 class="Title1">Escreva o nome do seu país:</h3></label>
+    <input class="form-control" id="Nacionalidade" type="text" name="NACI" placeholder="Insira aqui">
+    <button type="submit" class="btn btn-primary mt-4" onclick="calcular()">Enviar</button>
     </div>
     <script>
         function calcular() {
@@ -29,6 +34,9 @@
             }
         }
     </script>
-    <h6 id="RES">  </h6>
+    <h6 class="text-center pt-5 mt-5 Title1" id="RES">  </h6>
+    <div class="container-bottom">
+
+    </div>
 </body>
 </html>
